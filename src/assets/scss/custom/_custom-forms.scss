@@ -1,0 +1,380 @@
+.custom-control-label {
+    // Background-color and (when enabled) gradient
+    &::before {
+        border: $custom-control-indicator-border-width solid $custom-control-indicator-border-color;
+        @if $enable-transitions {
+            transition: $input-transition;
+        } 
+    }
+
+    span {
+        position: relative;
+        top: 2px;
+    }
+} 
+
+.custom-control-label {
+    margin-bottom: 0;
+}
+
+.custom-control-input {
+    &:active~.custom-control-label::before {
+        border-color: $custom-control-indicator-active-border-color;
+    }
+}
+
+// Alternative custom control 
+.custom-control-alternative {
+    .custom-control-label {
+        // Background-color and (when enabled) gradient
+        &::before {
+            border: 0;
+            box-shadow: $input-alternative-box-shadow;
+        }
+    } 
+
+    .custom-control-input {
+        &:checked {
+            ~ .custom-control-label {
+                &::before {
+                    box-shadow: $input-focus-alternative-box-shadow;
+                }
+            }
+        }
+
+        &:active~.custom-control-label::before,
+        &:focus~.custom-control-label::before {
+            box-shadow: $input-alternative-box-shadow;
+        }
+    }
+}
+
+
+// Checkboxes
+.custom-checkbox {
+    .custom-control-input~.custom-control-label {
+        cursor: pointer;
+        font-size: $font-size-sm;
+    }
+
+    .custom-control-input {
+        &:checked {
+            ~ .custom-control-label {
+                &::before {
+                    border-color: $custom-control-indicator-checked-border-color;
+                }
+                &::after {
+                    background-image: $custom-checkbox-indicator-icon-checked;
+                }
+            }
+        }
+
+        &:disabled {
+            ~ .custom-control-label {
+                &::before {
+                    border-color: $custom-control-indicator-disabled-bg;
+                }
+            }
+
+            &:checked {
+                &::before {
+                    border-color: $custom-control-indicator-checked-disabled-bg;
+                }
+            }
+        }
+    }
+}
+
+// Radios
+.custom-radio {
+    .custom-control-input~.custom-control-label {
+        cursor: pointer;
+        font-size: $font-size-sm;
+    }
+
+    .custom-control-input {
+        &:checked {
+            ~ .custom-control-label {
+                &::before {
+                    border-color: $custom-control-indicator-checked-border-color;
+                }
+                &::after {
+                    background-image: $custom-radio-indicator-icon-checked;
+                }
+            }
+        }
+
+        &:disabled {
+            ~ .custom-control-label {
+                &::before {
+                    border-color: $custom-control-indicator-disabled-bg;
+                }
+            }
+
+            &:checked {
+                &::before {
+                    border-color: $custom-control-indicator-checked-disabled-bg;
+                }
+            }
+        }
+    }
+
+}
+
+// Toggles
+.custom-toggle {
+    position: relative;
+    display: inline-block;
+    width: 50px;
+    height: 1.5rem;
+
+    input {
+        display: none;
+
+        &:checked {
+             + .custom-toggle-slider {
+                border: $custom-control-indicator-border-width solid $custom-control-indicator-checked-border-color;
+
+                &:before {
+                    background: $custom-toggle-checked-bg;
+                    transform: translateX(1.625rem);
+                }  
+            }
+        }
+        
+        &:disabled {
+            + .custom-toggle-slider {
+                border: $custom-control-indicator-border-width solid $custom-control-indicator-disabled-bg;
+            }
+
+            &:checked {
+                + .custom-toggle-slider {
+                    border: $custom-control-indicator-border-width solid $custom-control-indicator-disabled-bg;
+
+                    &:before {
+                        background-color: lighten($custom-control-indicator-checked-bg, 10%);
+                    }
+                }
+            }
+        }
+    }
+}
+
+.custom-toggle-slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    border: $custom-control-indicator-border-width solid $input-border-color;
+    border-radius: 34px !important;
+    background-color: transparent;
+    
+
+    &:before {
+        position: absolute;
+        content: "";
+        height: 18px;
+        width: 18px;
+        left: 2px;
+        bottom: 2px;
+        border-radius: 50% !important;
+        background-color: $custom-toggle-slider-bg;
+        transition: $input-transition;
+    }
+}
+
+.hero-hover {
+    width: 100% !important;
+    height: 100% !important;
+    background-color: rgba(0, 0, 0, 0.6) !important;
+}
+
+
+// @media(min-width: 1600px) {
+//     .hero-text {
+//         margin-left: 80%;
+//     }   
+// }
+
+// @media(min-width: 1500px) and (max-width: 1600px) {
+//     .hero-text {
+//         margin-left: 70%;
+//     }   
+// }
+
+// @media(min-width: 1400px) and (max-width: 1500px) {
+//     .hero-text {
+//         margin-left: 60%;
+//     }   
+// }
+
+// @media(min-width: 1300px) and (max-width: 1400px) {
+//     .hero-text {
+//         margin-left: 50%;
+//     }   
+// }
+
+// @media(min-width: 1200px) and (max-width: 1300px) {
+//     .hero-text {
+//         margin-left: 40%;
+//     }   
+// }
+
+// @media(min-width: 1100px) and (max-width: 1200px) {
+//     .hero-text {
+//         margin-left: 30%;
+//     }   
+// }
+
+// @media(min-width: 1000px) and (max-width: 1100px) {
+//     .hero-text {
+//         margin-left: 20%;
+//     }   
+// }
+
+// @media(max-width: 1000px) {
+//     .hero-text {
+//         margin-left: 0;
+//     }   
+// }
+
+.subtitle {
+    font-size: 3rem !important;
+}
+
+.subsubtitle {
+    font-size: 2rem !important;
+}
+
+.lead {
+    font-size: 1.5rem !important;
+    font-weight: 500 !important;
+}
+
+@media(max-width: 600px) {
+    .subtitle {
+        font-size: 1.8rem !important;
+    }
+    
+    .subsubtitle {
+        font-size: 1.5rem !important;
+    }
+
+    .lead {
+        font-size: 1.25rem !important;
+    }
+}
+
+
+.btn-default {
+    background-color: #506cac !important;
+}
+
+.dot {
+    &::before {
+        content: "";
+        width: 5px;
+        height: 5px;
+        background-color: #0d122a;
+        border-radius: 50%;
+        position: absolute;
+        top: 1rem;
+        left: 0;
+    }
+}
+
+.pub-dot {
+    &::before {
+        content: "";
+        width: 5px;
+        height: 5px;
+        background-color: #0d122a;
+        border-radius: 50%;
+        position: absolute;
+        top: 1.5rem;
+        left: -1rem;
+    }
+}
+
+.button-more {
+    padding: 0.25rem 1.5rem;
+    border-radius: 1rem;
+}
+
+.font-weight-extra-bold {
+    font-weight: $font-weight-extra-bold !important;
+}
+
+.black {
+    color: black;
+}
+
+.border-none {
+    border-style: none;
+}
+
+.underline {
+    font-size: 1.25rem;
+    font-weight: 500;
+    background: linear-gradient(transparent 0%, transparent 60%, #a8cae9 61%, #a8cae9 80%, transparent 81%, transparent 100%)
+}
+
+.quote {
+    font-style: italic;
+    font-weight: 500;
+    border-color: #a8cae9;
+    border-style: solid;
+    border-width: 1px;
+    padding: 0.5rem 1rem;
+}
+
+// .shape-skew-gray {
+//     content: "";
+//     // position: absolute;
+//     // left: 0;
+//     // right: 0;
+//     // top: 600px;
+//     height: 100px;
+//     background: #f4f5f7;
+//     -webkit-transform: skew(0, -8deg);
+//     transform: skew(0, -8deg);
+// }
+
+
+.ml--36 {
+    margin-left: -36px !important;
+}
+
+.bg-gradient-gray {
+    background: linear-gradient(87deg, #f4f5f7 0, adjust-hue(#f4f5f7, 25%) 100%) !important;
+}
+
+.products {
+    background-image: url("//memx-website.oss-cn-shanghai.aliyuncs.com/img/products/product.png");
+}
+
+a {
+    color: inherit;
+    i {
+        font-size: 1rem;
+    }
+}
+
+.fa-link {
+    font-size: 1rem;
+}
+
+.product-img {
+    opacity: 0.95;
+    position: relative;
+
+    @media(min-width: 768px) {
+        top: calc(3rem - 2vw);
+    }
+}
+
+.cursor-pointer {
+    cursor: pointer;
+}
