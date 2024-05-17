@@ -4,6 +4,7 @@ import AppHeader from "./layout/AppHeader";
 import AppFooter from "./layout/AppFooter";
 import Landing from "./views/Landing.vue";
 import Pub from "./views/Pub.vue";
+import Res_blog from "./views/Res_blog.vue";
 import About from "./views/About.vue";
 
 import Components from "./views/Components.vue";
@@ -29,6 +30,15 @@ export default new Router({
       components: {
         header: AppHeader,
         default: Pub,
+        footer: AppFooter
+      }
+    },
+    {
+      path: "/res_blog",
+      name: "res_blog",
+      components: {
+        header: AppHeader,
+        default: Res_blog,
         footer: AppFooter
       }
     },

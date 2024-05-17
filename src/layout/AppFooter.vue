@@ -1,94 +1,32 @@
 <template>
-    <footer class="footer has-cards">
-        <!-- <div class="container container-lg">
-            <div class="row">
-                <div class="col-md-6 mb-5 mb-md-0">
-                    <div class="card card-lift--hover shadow border-0">
-                        <router-link to="/landing" title="Landing Page">
-                            <img v-lazy="'img/theme/landing.jpg'" class="card-img">
-                        </router-link>
-                    </div>
-                </div>
-                <div class="col-md-6 mb-5 mb-lg-0">
-                    <div class="card card-lift--hover shadow border-0">
-                        <router-link to="/profile" title="Profile Page">
-                            <img v-lazy="'img/theme/profile.jpg'" class="card-img">
-                        </router-link>
-                    </div>
-                </div>
-            </div>
-        </div> -->
-        <div class="container">
-            <!-- <div class="row row-grid align-items-center my-md">
-                <div class="col-lg-6">
-                    <h3 class="text-primary font-weight-light mb-2">Thank you for supporting us!</h3>
-                    <h4 class="mb-0 font-weight-light">Let's get in touch on any of these platforms.</h4>
-                </div>
-                <div class="col-lg-6 text-lg-center btn-wrapper">
-                    <a target="_blank" rel="noopener" href="https://twitter.com/creativetim"
-                       class="btn btn-neutral btn-icon-only btn-twitter btn-round btn-lg" data-toggle="tooltip"
-                       data-original-title="Follow us">
-                        <i class="fa fa-twitter"></i>
-                    </a>
-                    <a target="_blank" rel="noopener" href="https://www.facebook.com/creativetim"
-                       class="btn btn-neutral btn-icon-only btn-facebook btn-round btn-lg" data-toggle="tooltip"
-                       data-original-title="Like us">
-                        <i class="fa fa-facebook-square"></i>
-                    </a>
-                    <a target="_blank" rel="noopener" href="https://dribbble.com/creativetim"
-                       class="btn btn-neutral btn-icon-only btn-dribbble btn-lg btn-round" data-toggle="tooltip"
-                       data-original-title="Follow us">
-                        <i class="fa fa-dribbble"></i>
-                    </a>
-                    <a target="_blank" rel="noopener" href="https://github.com/creativetimofficial"
-                       class="btn btn-neutral btn-icon-only btn-github btn-round btn-lg" data-toggle="tooltip"
-                       data-original-title="Star on Github">
-                        <i class="fa fa-github"></i>
-                    </a>
-                </div>
-            </div> -->
-            <hr>
-            <div class="row align-items-center justify-content-md-between">
-                <div class="col-md-6">
-                    <div class="copyright">
-                        &copy; 2018 - {{year}}
-                        <a href="#" rel="noopener">MEMX Team</a>
-                    </div>
-                </div>
-                <div class="col-md-6">
-                    <ul class="nav nav-footer justify-content-end">
-                        <!-- <li class="nav-item">
-                            <a href="https://www.creative-tim.com" class="nav-link" target="_blank" rel="noopener">Creative Tim</a>
-                        </li>
-                        <li class="nav-item">
-                            <a href="https://www.creative-tim.com/presentation" class="nav-link" target="_blank" rel="noopener">About
-                                Us</a>
-                        </li>
-                        <li class="nav-item">
-                            <a href="http://blog.creative-tim.com" class="nav-link" target="_blank" rel="noopener">Blog</a>
-                        </li> -->
-                        <li class="nav-item">
-                            <a href="mailto:info@memx.life" class="nav-link" target="_blank" rel="noopener">Contact Us</a>
-                        </li>
-                        <!-- <li class="nav-item">
-                            <a href="https://github.com/creativetimofficial/argon-design-system/blob/master/LICENSE.md"
-                               class="nav-link" target="_blank" rel="noopener">MIT License</a>
-                        </li> -->
-                    </ul>
-                </div>
-            </div>
-        </div>
-    </footer>
+    <div class="footer">
+        <ul class="text_scale text_line_height">
+            <li><span class="footer_name">联系人：</span><span class="footer_content">黄老师</span></li>
+            <li><span class="footer_name">邮箱：</span><span class="footer_content">jlhuang19@fudan.edu.cn</span></li>
+        </ul>
+    </div>
 </template>
-<script>
-export default {
-  name: 'app-footer',
-  data() {
-    return {
-      year: new Date().getFullYear()
-    }
-  }
-};
-</script>
+
+
 <style>
+.footer {
+    background-color: #0b3157; /* 设置背景色 */
+    padding: 20px; /* 设置内边距 */
+    text-align: center; 
+}
+
+.footer_name, .footer_content {
+    font-weight: bold;
+    font-size: 1.5rem;
+    color: #ffffff; /* 修改字体颜色为白色 */
+}
+
+.text_scale {
+    font-size: 1.5rem; 
+}
+
+.text_line_height li {
+    margin-bottom: 10px; 
+    list-style-type: none; 
+}
 </style>
