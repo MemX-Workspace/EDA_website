@@ -18,7 +18,7 @@
 .footer_name, .footer_content {
     font-weight: bold;
     font-size: 1.5rem;
-    color: #ffffff; /* 修改字体颜色为白色 */
+    color: #052753; /* 修改字体颜色为白色 */
 }
 
 .text_scale {

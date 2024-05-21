@@ -2,7 +2,7 @@
     <header class="header-global">
         <base-nav class="" transparent type="default" effect="light" expand>
             <router-link slot="brand" class="navbar-brand mr-lg-5" to="/">
-                <img src="'https://llm4eda.oss-cn-hangzhou.aliyuncs.com/img/brand/LLM4EDA.png" alt="logo">
+                <img src="//llm4eda.oss-cn-hangzhou.aliyuncs.com/img/brand/LLM4EDA.png" alt="logo">
                 <!-- <span>MemX</span> -->
             </router-link>
 

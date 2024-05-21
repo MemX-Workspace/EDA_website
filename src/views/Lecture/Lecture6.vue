@@ -2,7 +2,7 @@
     <div class="lecture-preview">
         <div class="lecture-details">
             <h3>Lecture VI</h3>
-            <p><strong>Saturday, June 22, 10:40-12:00</strong></p>
+            <p><strong>Friday, July 5, 10:40-12:00</strong></p>
             <h4>LLM and Electronic Design Automation</h4>
             <div class="row">
                 <div class="speaker-details" style="width: 75%;margin-left: 15px;">

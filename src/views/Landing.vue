@@ -12,6 +12,10 @@
                             comprehensive and hands-on learning experience in LLM for EDA. Led by a team of seasoned
                             veterans and rising stars in the EDA field, the program covers everything from fundamental
                             concepts to cutting-edge research topics in LLM for EDA.</p>
+                        <h2 class="display-3">本活动向所有对LLM for EDA领域感兴趣的本科生和研究生开放</h2>
+                        <p class="lead">
+                            本暑期学校旨在为学生提供有关大语言模型（LLM）应用于电子设计自动化（EDA）的全面实践学习体验。本项目由经验丰富的EDA领域资深专家与新锐人才领衔，内容涵盖从基础概念到前沿研究的各个方面。
+                        </p>
                     </div>
                 </div>
             </div>
@@ -22,21 +26,24 @@
             <div class="container">
                 <div class="row">
                     <div :class="{ 'research_card': true }" id="pj1">
-                        <img class="research_img" src="/img/Educational Lecture.png" alt="图片">
+                        <img class="research_img"
+                            src="https://llm4eda.oss-cn-hangzhou.aliyuncs.com/img/Educational Lecture.png" alt="图片">
                         <div class="small_font_title" style="margin: 5% 0">Educational Lectures</div>
                         <div class="small_font_text" style="color: #7d7d7f;">
                             Dive into the essentials of LLM for EDA.</div>
                     </div>
 
                     <div :class="{ 'research_card': true }" id="pj2">
-                        <img class="research_img" src="/img/Hackathon.png" alt="图片">
+                        <img class="research_img" src="https://llm4eda.oss-cn-hangzhou.aliyuncs.com/img/Hackathon.png"
+                            alt="图片">
                         <div class="small_font_title" style="margin: 5% 0">Hackathon</div>
                         <div class="small_font_text" style="color: #7d7d7f;">Collaborate, compete, and stand a chance to
                             win significant prizes. Note: Hackathon participation is only available in-person.</div>
                     </div>
 
                     <div :class="{ 'research_card': true }" id="pj3">
-                        <img class="research_img" src="/img/Dinner.png" alt="图片">
+                        <img class="research_img" src="https://llm4eda.oss-cn-hangzhou.aliyuncs.com/img/Dinner.png"
+                            alt="图片">
                         <div class="small_font_title" style="margin: 5% 0">Networking Dinners</div>
                         <div class="small_font_text" style="color: #7d7d7f;">Connect with peers and professionals over
                             delicious meals.</div>
@@ -49,13 +56,13 @@
         <section class="section">
             <div class="container-fluid" style="padding-left: 15%; padding-right: 15%;">
                 <div>
-                    <h2 class="mb-5" style="margin-left: 250px;">Calendar</h2>
+                    <h2 class="mb-5">Calendar</h2>
                     <div class="container" style="display: flex; flex-direction: row;">
-                        <div class="table-responsive" style="width: 40%;">
+                        <div class="table-responsive custom-card-width" style="width: 40%;">
                             <table class="table table-striped table-bordered">
                                 <thead>
                                     <tr>
-                                        <th>6月21日</th>
+                                        <th>7月4日</th>
                                     </tr>
                                 </thead>
                                 <tbody>
@@ -63,14 +70,14 @@
                                         @mouseenter="showDetails_1(index)" @mouseleave="closeDetails">
                                         <td>
                                             <strong>{{ event.time }}&nbsp;&nbsp;&nbsp;&nbsp;-&nbsp;&nbsp;&nbsp;&nbsp;{{
-                        event.name }}</strong><br>
+                                                event.name }}</strong><br>
                                             {{ event.speaker.replace(/ /g, '&nbsp;') }}
                                         </td>
                                     </tr>
                                 </tbody>
                             </table>
                         </div>
-                        <div class="card" style="width: 60%;">
+                        <div class="card d-none d-sm-block" style="width: 60%;">
                             <div class="card-body">
                                 <component :is="eventDescription_1"></component>
                             </div>
@@ -78,11 +85,11 @@
                     </div>
 
                     <div class="container" style="display: flex; flex-direction: row; margin-top: 40px;">
-                        <div class="table-responsive" style="width: 40%;">
+                        <div class="table-responsive custom-card-width" style="width: 40%;">
                             <table class="table table-striped table-bordered">
                                 <thead>
                                     <tr>
-                                        <th>6月22日</th>
+                                        <th>7月5日</th>
                                     </tr>
                                 </thead>
                                 <tbody>
@@ -91,14 +98,14 @@
                                         @mouseleave="closeDetails">
                                         <td>
                                             <strong>{{ event.time }}&nbsp;&nbsp;&nbsp;&nbsp;-&nbsp;&nbsp;&nbsp;&nbsp;{{
-                        event.name }}</strong><br>
+                                                event.name }}</strong><br>
                                             {{ event.speaker.replace(/ /g, '&nbsp;') }}
                                         </td>
                                     </tr>
                                 </tbody>
                             </table>
                         </div>
-                        <div class="card" style="width: 60%;">
+                        <div class="card d-none d-sm-block" style="width: 60%;">
                             <div class="card-body">
                                 <component :is="eventDescription_2"></component>
                             </div>
@@ -106,11 +113,11 @@
                     </div>
 
                     <div class="container" style="display: flex; flex-direction: row; margin-top: 40px;">
-                        <div class="table-responsive" style="width: 40%;">
+                        <div class="table-responsive custom-card-width" style="width: 40%;">
                             <table class="table table-striped table-bordered">
                                 <thead>
                                     <tr>
-                                        <th>6月23日</th>
+                                        <th>7月6日</th>
                                     </tr>
                                 </thead>
                                 <tbody>
@@ -119,14 +126,14 @@
                                         @mouseleave="closeDetails">
                                         <td>
                                             <strong>{{ event.time }}&nbsp;&nbsp;&nbsp;&nbsp;-&nbsp;&nbsp;&nbsp;&nbsp;{{
-                        event.name }}</strong><br>
+                                                event.name }}</strong><br>
                                             {{ event.speaker.replace(/ /g, '&nbsp;') }}
                                         </td>
                                     </tr>
                                 </tbody>
                             </table>
                         </div>
-                        <div class="card" style="width: 60%;">
+                        <div class="card d-none d-sm-block" style="width: 60%;">
                             <div class="card-body">
                                 <!-- <component :is="eventDescription_3"></component> -->
                             </div>
@@ -148,35 +155,60 @@
                 <div class="card">
                     <div class="card-body">
                         <p class="card-text dark-text" style="font-size: 1.2em; line-height: 1.6;">
-                            <strong>Date:</strong> Friday, June 21, 20:00 - Sunday, June 23, 10:00<br><br>
+                            <strong>Date:</strong> Thursday, July 4, 20:00 - Saturday, July 6, 10:00<br><br>
                             <strong>Event:</strong> Develop an LLM-based EDA framework<br><br>
                             <strong>Description:</strong> Join us for an exciting two-day collaborative event where
                             participants will work together to develop an innovative framework using Language Models
                             (LLM) in Electronic Design Automation (EDA). This event offers a unique opportunity to
                             explore the integration of LLM with EDA processes, enhancing both your skills and
                             understanding of these cutting-edge technologies.<br><br>
+                            <strong>描述：</strong> 参加为期两天的编程马拉松活动，参与者将共同努力，在电子设计自动化 (EDA) 中开发基于大语言模型 (LLM) 的框架。
+                            此次活动提供了一个独特的机会来探索LLM与EDA流程的整合的方案，从而提高您的技能和对这些尖端技术的理解。<br><br>
                             <strong>Competition Details:</strong><br>
                         <ul style="list-style-type: none; padding-left: 0;">
                             <li>&#8226; Topic Announcement: The specific challenge will be revealed at the start of the
                                 event,
                                 ensuring a level playing field and stimulating creativity.</li>
+                            <li>&#8226; 主题公布：比赛的具体内容将在本次活动开始时揭晓，确保公平的竞争环境以激发参与者的创造力。</li>
                         </ul>
                         <strong>Generous rewards:</strong><br>
                         <ul style="list-style-type: none; padding-left: 0;">
-                            <li>&#8226; First Prize: 5000￥</li>
-                            <li>&#8226; Second Prize: 3000￥</li>
-                            <li>&#8226; Third Prize: 1000￥</li>
+                            <li style="color: #FF5733; font-size: 1.2em;">&#8226; First Prize: 5000￥</li>
+                            <li style="color: #FF5733; font-size: 1.2em;">&#8226; Second Prize: 3000￥</li>
+                            <li style="color: #FF5733; font-size: 1.2em;">&#8226; Third Prize: 1000￥</li>
                         </ul>
                         </p>
 
-                        <img src="/img/Hackathon.png" alt="Hackathon Image" class="img-fluid mx-auto d-block"
-                            style="max-width: 100%; height: auto;">
+                        <img src="https://llm4eda.oss-cn-hangzhou.aliyuncs.com/img/Hackathon.png" alt="Hackathon Image"
+                            class="img-fluid mx-auto d-block" style="max-width: 100%; height: auto;">
                     </div>
                 </div>
             </div>
         </section>
 
-
+        <section class="section">
+            <div class="container-fluid" style="padding-left: 15%; padding-right: 15%;">
+                <div>
+                    <h2 class="mb-5">Sponsor</h2>
+                </div>
+                <div class="row">
+                    <div class="col-md-12 text-center">
+                        <img src="https://llm4eda.oss-cn-hangzhou.aliyuncs.com/img/sponsor/Organization.png" alt="Organizer" class="img-fluid mb-4">
+                        <p class="mb-4">复旦大学集成芯片与系统全国重点实验室是科技部遴选的首批20个全国重点实验室之一。实验室致力于发展“系统-设计-工艺跨层次协同优化”的集成电路性能提升新路径，成为领域内科学研究、技术创新与人才培养的战略高地。</p>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-6">
+                        <img src="https://llm4eda.oss-cn-hangzhou.aliyuncs.com/img/sponsor/Huadajiutian.png"
+                            alt="Sponsor 1" class="img-fluid" style="height: 100px;object-fit: cover;">
+                    </div>
+                    <div class="col-md-6">
+                        <img src="https://llm4eda.oss-cn-hangzhou.aliyuncs.com/img/sponsor/Hejiangongruan.png"
+                            alt="Sponsor 2" class="img-fluid" style="height: 100px;object-fit: cover;">
+                    </div>
+                </div>
+            </div>
+        </section>
 
 
         <section class="section" id="apply-section">
@@ -190,7 +222,8 @@
                             <div class="card-body">
                                 <h5 class="card-title" style="color: #333; font-weight: bold;">1.Scan this QR code to
                                     join our Wechat Group</h5>
-                                <img src="/img/Apply QR.png" class="img-fluid" alt="二维码">
+                                <img src="https://llm4eda.oss-cn-hangzhou.aliyuncs.com/img/Apply QR.png"
+                                    class="img-fluid" alt="二维码">
                             </div>
                         </div>
                     </div>
@@ -212,7 +245,8 @@
                                 <div style="text-align: center;"> <!-- 将按钮居中 -->
                                     <a href="https://docs.google.com/forms/d/e/1FAIpQLSfQU5CovEQXtTLBYhn3Caon0rDK-l5LiVGS0JpJbWg3FIAaWg/viewform?pli=1"
                                         target="_blank" class="btn btn-primary"
-                                        style="font-size: 16px; border-radius: 20px; padding: 10px 20px; margin-top: 15%; width: 80%;">Questionnaire</a> <!-- 调整按钮的padding -->
+                                        style="font-size: 16px; border-radius: 20px; padding: 10px 20px; margin-top: 15%; width: 80%;">Questionnaire</a>
+                                    <!-- 调整按钮的padding -->
                                 </div>
                             </div>
                         </div>
@@ -454,4 +488,10 @@ export default {
 .dark-text {
     color: #333;
 }
+
+@media (max-width: 576px) { 
+        .custom-card-width {
+            width: 100% !important;
+        }
+    }
 </style>

@@ -2,7 +2,7 @@
     <div class="lecture-preview">
         <div class="lecture-details">
             <h3>Opening speech</h3>
-            <p><strong>Saturday, June 22, 9:00-9:10</strong></p>
+            <p><strong>Thursday, July 4, 9:00-9:10</strong></p>
             <div class="row">
                 <div class="speaker-details" style="width: 75%;margin-left: 15px;">
                     <p><strong>Dr. Xuan Zeng</strong></p>

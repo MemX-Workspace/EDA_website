@@ -2,7 +2,7 @@
     <div class="lecture-preview">
         <div class="lecture-details">
             <h3>Lecture II</h3>
-            <p><strong>Friday, June 21, 13:00-14:50</strong></p>
+            <p><strong>Thursday, July 4, 13:00-14:50</strong></p>
             <h4>AI Agents: Towards Human-level Software Developer</h4>
             <div class="row">
                 <div class="speaker-details" style="width: 75%;margin-left: 15px;">

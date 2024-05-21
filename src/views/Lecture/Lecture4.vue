@@ -2,7 +2,7 @@
     <div class="lecture-preview">
         <div class="lecture-details">
             <h3>Lecture IV</h3>
-            <p><strong>Friday, June 21, 18:30-20:30</strong></p>
+            <p><strong>Thursday, July 4, 18:30-20:30</strong></p>
             <h4>LLM for data-scarce domain-specific problems</h4>
             <div class="row">
                 <div class="speaker-details" style="width: 75%;margin-left: 15px;">

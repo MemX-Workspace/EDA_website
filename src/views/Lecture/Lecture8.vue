@@ -2,7 +2,7 @@
     <div class="lecture-preview">
         <div class="lecture-details">
             <h3>Lecture VIII</h3>
-            <p><strong>Saturday, June 22, 15:40-17:00</strong></p>
+            <p><strong>Friday, July 5, 15:40-17:00</strong></p>
             <h4>LLM for Register-Transfer-Level Code Generation</h4>
             <div class="row">
                 <div class="speaker-details" style="width: 75%;margin-left: 15px;">

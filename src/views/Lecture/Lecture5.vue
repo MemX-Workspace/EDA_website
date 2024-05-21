@@ -2,7 +2,7 @@
     <div class="lecture-preview">
         <div class="lecture-details">
             <h3>Lecture V</h3>
-            <p><strong>Saturday, June 22, 8:30-10:20</strong></p>
+            <p><strong>Friday, July 5, 8:30-10:20</strong></p>
             <h4>The representation learning of LLM</h4>
             <div class="row">
                 <div class="speaker-details" style="width: 75%;margin-left: 15px;">

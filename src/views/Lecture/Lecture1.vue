@@ -2,7 +2,7 @@
     <div class="lecture-preview">
         <div class="lecture-details">
             <h3>Lecture I</h3>
-            <p><strong>Friday, June 21, 10:00-12:00</strong></p>
+            <p><strong>Thursday, July 4, 10:00-12:00</strong></p>
             <h4>Exploring LLMs: Milestones, Techniques, and Challenges</h4>
             <div class="row">
                 <div class="speaker-details" style="width: 75%;margin-left: 15px;">
